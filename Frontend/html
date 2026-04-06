@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABITtracker — Главная</title>
+    <link rel="stylesheet" href="mama.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>ABITtracker</h1>
+            <p>Ваш гид в мир высшего образования</p>
+        </div>
+        <nav class="nav">
+            <a href="#" class="nav-link active">Главная</a>
+            <a href="#" class="nav-link">Профиль</a>
+            <a href="#" class="nav-link">Помощь</a>
+        </nav>
+        <button class="notification-btn">
+            🔔 <span class="badge">3</span>
+        </button>
+    </header>
+
+    <main class="main">
+        <!-- Приветственный блок с прогрессом -->
+        <section class="hero">
+            <div class="greeting">
+                <h2>Добрый день!</h2>
+                <p>Отслеживайте статусы подачи документов и получайте персонализированные рекомендации</p>
+            </div>
+            <div class="progress-widget">
+                <div class="progress-circle">
+                    <svg viewBox="0 0 36 36" class="progress-ring">
+                        <circle cx="18" cy="18" r="15.915" fill="none" stroke="#e0e0e0" stroke-width="2"></circle>
+                        <circle cx="18" cy="18" r="15.915" fill="none"
+                                stroke="#4f46e5" stroke-width="2" stroke-dasharray="75, 100"
+                                transform="rotate(-90, 18, 18)"></circle>
+                    </svg>
+                    <div class="progress-info">
+                        <span class="progress-percent">75%</span>
+                        <span class="progress-label">Готово</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Дедлайны в виде карточек с индикаторами -->
+        <section class="deadlines">
+            <h2 class="section-title">Дедлайны подачи документов</h2>
+            <div class="cards-grid">
+                <div class="card deadline-card urgent">
+                    <div class="deadline-header">
+                        <h3>МГУ им. Ломоносова</h3>
+                        <span class="urgency-tag">Срочно!</span>
+                    </div>
+                    <div class="deadline-date">До 25 июля</div>
+                    <div class="countdown">
+                        <span>Осталось:</span>
+                        <strong>12 дней</strong>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 80%"></div>
+                    </div>
+                </div>
+
+                <div class="card deadline-card upcoming">
+                    <div class="deadline-header">
+                        <h3>СПбГУ</h3>
+                    </div>
+            <div class="deadline-date">До 30 июля</div>
+            <div class="countdown">
+                <span>Осталось:</span>
+                <strong>17 дней</strong>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 60%"></div>
+            </div>
+        </div>
+
+        <div class="card deadline-card normal">
+            <div class="deadline-header">
+                <h3>НГУ</h3>
+            </div>
+            <div class="deadline-date">До 15 августа</div>
+            <div class="countdown">
+                <span>Осталось:</span>
+                <strong>32 дня</strong>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 30%"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Статусы подачи -->
+<section class="statuses">
+    <h2 class="section-title">Текущие статусы</h2>
+    <div class="status-list">
+        <div class="status-item accepted">
+            <div class="status-icon">✓</div>
+            <div class="status-content">
+                <h3>МГУ им. Ломоносова</h3>
+                <p>Бюджет, направление: Прикладная математика</p>
+                <div class="status-meta">
+                    <span>Баллы ЕГЭ: 285</span>
+                    <span>Статус: Подтверждён</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="status-item pending">
+            <div class="status-icon">⏱️</div>
+            <div class="status-content">
+                <h3>СПбГУ</h3>
+                <p>Контракт, направление: Юриспруденция</p>
+                <div class="status-meta">
+                    <span>Баллы ЕГЭ: 278</span>
+                    <span>Статус: На рассмотрении</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="status-item rejected">
+            <div class="status-icon">✕</div>
+            <div class="status-content">
+                <h3>НГУ</h3>
+                <p>Причина: недостаточно баллов</p>
+                <div class="status-meta">
+                    <span>Баллы ЕГЭ: 260</span>
+                    <span>Статус: Отклонён</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Рекомендации вузов -->
+<section class="recommendations">
+    <h2 class="section-title">Рекомендации для вас</h2>
+    <div class="recommendation-grid">
+        <div class="recommendation-card">
+            <div class="uni-badge">Бюджет</div>
+            <h3>КФУ</h3>
+            <p>Проходной балл от 250</p>
+            <div class="uni-details">
+                <div>Конкурс: 5 чел/место</div>
+                <div>Бюджетных мест: 120</div>
+            </div>
+            <button class="btn btn-primary">Подать заявку</button>
+        </div>
+
+        <div class="recommendation-card">
+            <div class="uni-badge contract">Контракт</div>
+            <h3>СВО</h3>
+            <p>Проходной балл от 240</p>
+            <div class="uni-details">
+                <div>Конкурс: 4 чел/место</div>
+                <div>Стоимость: 150 000 руб/год</div>
+            </div>
+            <button class="btn btn-primary">Подать заявку</button>
+        </div>
+
+        <div class="recommendation-card">
+            <div class="uni-badge">Бюджет</div>
+            <h3>ТГУ</h3>
+            <p>Проходной балл от 220</p>
+            <div class="uni-details">
+                <div>Конкурс: 3 чел/место</div>
+                <div>Бюджетных мест: 80</div>
+            </div>
+            <button class="btn btn-secondary">Подробнее</button>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 ABITtracker. Все права защищены.</p>
+</footer>
+</body>
+</html>
+
