@@ -9,7 +9,7 @@ body {
     background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
     color: #2d3748;
 }
-/* Шапка */
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -67,59 +67,29 @@ body {
     padding: 0.2rem 0.4rem;
     border-radius: 50%;
 }
-/* Основной контент */
+
 .main {
     padding: 2rem 3rem;
     max-width: 1400px;
     margin: 0 auto;
 }
-/* Герой‑блок с прогрессом */
+
 .hero {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 3rem;
 }
 .greeting h2 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+    font-size: 6rem;
+    margin-bottom: 1rem;
     color: #1a202c;
 }
 .greeting p {
     color: #718096;
     max-width: 400px;
 }
-/* Виджет прогресса */
-.progress-widget {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.progress-circle {
-    position: relative;
-    width: 120px;
-    height: 120px;
-}
-.progress-ring {
-    transform: rotate(-90deg);
-}
-.progress-info {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-.progress-percent {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #4f46e5;
-}
-.progress-label {
-    font-size: 0.8rem;
-    color: #718096;
-}
-/* Секции */
+
 .section-title {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
@@ -132,12 +102,12 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 60px;
+    width: 80px;
     height: 3px;
     background: linear-gradient(90deg, #4f46e5, #8b5cf6);
     border-radius: 2px;
 }
-/* Карточки дедлайнов */
+
 .cards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -197,25 +167,14 @@ body {
     color: #4f46e5;
     font-size: 1.1rem;
 }
-.progress-bar {
-    height: 8px;
-    background: rgba(79, 70, 229, 0.1);
-    border-radius: 4px;
-    overflow: hidden;
-}
-.progress-fill {
-    height: 100%;
-    background: linear-gradient(90deg, #4f46e5, #8b5cf6);
-    border-radius: 4px;
-    transition: width 0.5s ease;
-}
-/* Статусы подачи */
+
+
 .status-list {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
-/* Продолжение стилей для .status-item */
+
 .status-item {
     box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.05),
                -8px -8px 25px white;
@@ -245,7 +204,7 @@ body {
     font-size: 0.9rem;
     color: #718096;
 }
-/* Стили для разных статусов */
+
 .status-item.accepted .status-icon {
     color: #48bb78;
 }
@@ -255,7 +214,7 @@ body {
 .status-item.rejected .status-icon {
     color: #e53e3e;
 }
-/* Рекомендации вузов */
+
 .recommendation-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -304,7 +263,7 @@ body {
     font-size: 0.9rem;
     color: #718096;
 }
-/* Кнопки */
+
 .btn {
     width: 100%;
     padding: 0.75rem 1rem;
@@ -337,7 +296,7 @@ body {
     background: #f7fafc;
     transform: translateY(-2px);
 }
-/* Подвал */
+
 .footer {
     text-align: center;
     padding: 2rem;
@@ -347,7 +306,7 @@ body {
     color: #718096;
     font-size: 0.9rem;
 }
-/* Адаптивность */
+
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
