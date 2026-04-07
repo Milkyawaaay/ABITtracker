@@ -17,36 +17,17 @@
             <a href="#" class="nav-link">Профиль</a>
             <a href="#" class="nav-link">Помощь</a>
         </nav>
-        <button class="notification-btn">
-            🔔 <span class="badge">3</span>
-        </button>
     </header>
 
-    <main class="main">
-        <!-- Приветственный блок с прогрессом -->
+ <main class="main">
         <section class="hero">
             <div class="greeting">
                 <h2>Добрый день!</h2>
                 <p>Отслеживайте статусы подачи документов и получайте персонализированные рекомендации</p>
             </div>
-            <div class="progress-widget">
-                <div class="progress-circle">
-                    <svg viewBox="0 0 36 36" class="progress-ring">
-                        <circle cx="18" cy="18" r="15.915" fill="none" stroke="#e0e0e0" stroke-width="2"></circle>
-                        <circle cx="18" cy="18" r="15.915" fill="none"
-                                stroke="#4f46e5" stroke-width="2" stroke-dasharray="75, 100"
-                                transform="rotate(-90, 18, 18)"></circle>
-                    </svg>
-                    <div class="progress-info">
-                        <span class="progress-percent">75%</span>
-                        <span class="progress-label">Готово</span>
-                    </div>
-                </div>
-            </div>
         </section>
 
-        <!-- Дедлайны в виде карточек с индикаторами -->
-        <section class="deadlines">
+      <section class="deadlines">
             <h2 class="section-title">Дедлайны подачи документов</h2>
             <div class="cards-grid">
                 <div class="card deadline-card urgent">
@@ -59,9 +40,6 @@
                         <span>Осталось:</span>
                         <strong>12 дней</strong>
                     </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 80%"></div>
-                    </div>
                 </div>
 
                 <div class="card deadline-card upcoming">
@@ -72,9 +50,6 @@
             <div class="countdown">
                 <span>Осталось:</span>
                 <strong>17 дней</strong>
-            </div>
-            <div class="progress-bar">
-                <div class="progress-fill" style="width: 60%"></div>
             </div>
         </div>
 
@@ -87,14 +62,10 @@
                 <span>Осталось:</span>
                 <strong>32 дня</strong>
             </div>
-            <div class="progress-bar">
-                <div class="progress-fill" style="width: 30%"></div>
-            </div>
         </div>
     </div>
 </section>
 
-<!-- Статусы подачи -->
 <section class="statuses">
     <h2 class="section-title">Текущие статусы</h2>
     <div class="status-list">
@@ -105,7 +76,7 @@
                 <p>Бюджет, направление: Прикладная математика</p>
                 <div class="status-meta">
                     <span>Баллы ЕГЭ: 285</span>
-                    <span>Статус: Подтверждён</span>
+                    <span>Статус: Подтвержден</span>
                 </div>
             </div>
         </div>
@@ -129,15 +100,14 @@
                 <p>Причина: недостаточно баллов</p>
                 <div class="status-meta">
                     <span>Баллы ЕГЭ: 260</span>
-                    <span>Статус: Отклонён</span>
+                    <span>Статус: Отклонен</span>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Рекомендации вузов -->
-<section class="recommendations">
+     <section class="recommendations">
     <h2 class="section-title">Рекомендации для вас</h2>
     <div class="recommendation-grid">
         <div class="recommendation-card">
@@ -157,7 +127,7 @@
             <p>Проходной балл от 240</p>
             <div class="uni-details">
                 <div>Конкурс: 4 чел/место</div>
-                <div>Стоимость: 150 000 руб/год</div>
+                <div>Стоимость: 150 000руб/год</div>
             </div>
             <button class="btn btn-primary">Подать заявку</button>
         </div>
@@ -181,4 +151,3 @@
 </footer>
 </body>
 </html>
-
