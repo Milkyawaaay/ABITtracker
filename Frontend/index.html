@@ -7,147 +7,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <h1>ABITtracker</h1>
-            <p>Ваш гид в мир высшего образования</p>
+
+<header class="header">
+    <div class="logo"><h1>ABITtracker</h1><p>Ваш гид в мир высшего образования</p></div>
+    <nav class="nav">
+        <a href="#" class="nav-link active">Главная</a>
+        <a href="#" class="nav-link">Профиль</a>
+        <a href="#" class="nav-link">Помощь</a>
+    </nav>
+</header>
+
+<main class="main">
+
+    <section class="hero"><div class="greeting"><h2>Добрый день!</h2><p>Отслеживайте статусы подачи документов</p></div></section>
+
+    <section class="deadlines">
+        <h2 class="section-title">Дедлайны подачи документов</h2>
+        <div class="cards-grid">
+            <div class="card deadline-card urgent"><div class="deadline-header"><h3>МГУ им. Ломоносова</h3><span class="urgency-tag">Срочно!</span></div><div class="deadline-date">До 25 июля</div><div class="countdown"><span>Осталось:</span><strong>12 дней</strong></div></div>
+            <div class="card deadline-card upcoming"><div class="deadline-header"><h3>СПбГУ</h3></div><div class="deadline-date">До 30 июля</div><div class="countdown"><span>Осталось:</span><strong>17 дней</strong></div></div>
+            <div class="card deadline-card normal"><div class="deadline-header"><h3>НГУ</h3></div><div class="deadline-date">До 15 августа</div><div class="countdown"><span>Осталось:</span><strong>32 дня</strong></div></div>
         </div>
-        <nav class="nav">
-            <a href="#" class="nav-link active">Главная</a>
-            <a href="#" class="nav-link">Профиль</a>
-            <a href="#" class="nav-link">Помощь</a>
-        </nav>
-    </header>
+    </section>
 
- <main class="main">
-        <section class="hero">
-            <div class="greeting">
-                <h2>Добрый день!</h2>
-                <p>Отслеживайте статусы подачи документов и получайте персонализированные рекомендации</p>
-            </div>
-        </section>
-
-      <section class="deadlines">
-            <h2 class="section-title">Дедлайны подачи документов</h2>
-            <div class="cards-grid">
-                <div class="card deadline-card urgent">
-                    <div class="deadline-header">
-                        <h3>МГУ им. Ломоносова</h3>
-                        <span class="urgency-tag">Срочно!</span>
-                    </div>
-                    <div class="deadline-date">До 25 июля</div>
-                    <div class="countdown">
-                        <span>Осталось:</span>
-                        <strong>12 дней</strong>
-                    </div>
-                </div>
-
-                <div class="card deadline-card upcoming">
-                    <div class="deadline-header">
-                        <h3>СПбГУ</h3>
-                    </div>
-            <div class="deadline-date">До 30 июля</div>
-            <div class="countdown">
-                <span>Осталось:</span>
-                <strong>17 дней</strong>
-            </div>
+    <section class="statuses">
+        <h2 class="section-title">Текущие статусы</h2>
+        <div class="status-list">
+            <div class="status-item accepted"><div class="status-icon">✓</div><div class="status-content"><h3>МГУ им. Ломоносова</h3><p>Бюджет, направление: Прикладная математика</p><div class="status-meta"><span>Баллы ЕГЭ: 285</span><span>Статус: Подтвержден</span></div></div></div>
+            <div class="status-item pending"><div class="status-icon">⏱️</div><div class="status-content"><h3>СПбГУ</h3><p>Контракт, направление: Юриспруденция</p><div class="status-meta"><span>Баллы ЕГЭ: 278</span><span>Статус: На рассмотрении</span></div></div></div>
+            <div class="status-item rejected"><div class="status-icon">✕</div><div class="status-content"><h3>НГУ</h3><p>Причина: недостаточно баллов</p><div class="status-meta"><span>Баллы ЕГЭ: 260</span><span>Статус: Отклонен</span></div></div></div>
         </div>
+    </section>
 
-        <div class="card deadline-card normal">
-            <div class="deadline-header">
-                <h3>НГУ</h3>
-            </div>
-            <div class="deadline-date">До 15 августа</div>
-            <div class="countdown">
-                <span>Осталось:</span>
-                <strong>32 дня</strong>
-            </div>
+    <section class="recommendations">
+        <h2 class="section-title">Рекомендации для вас</h2>
+        <div class="recommendation-grid">
+            <div class="recommendation-card"><div class="uni-badge">Бюджет</div><h3>КФУ</h3><p>Проходной балл от 250</p><div class="uni-details"><div>Конкурс: 5 чел/место</div><div>Бюджетных мест: 120</div></div><button class="btn btn-primary">Подать заявку</button></div>
+            <div class="recommendation-card"><div class="uni-badge contract">Контракт</div><h3>УрФУ</h3><p>Проходной балл от 240</p><div class="uni-details"><div>Конкурс: 4 чел/место</div><div>Стоимость: 150 000руб/год</div></div><button class="btn btn-primary">Подать заявку</button></div>
+            <div class="recommendation-card"><div class="uni-badge">Бюджет</div><h3>ТГУ</h3><p>Проходной балл от 220</p><div class="uni-details"><div>Конкурс: 3 чел/место</div><div>Бюджетных мест: 80</div></div><button class="btn btn-secondary">Подробнее</button></div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="statuses">
-    <h2 class="section-title">Текущие статусы</h2>
-    <div class="status-list">
-        <div class="status-item accepted">
-            <div class="status-icon">✓</div>
-            <div class="status-content">
-                <h3>МГУ им. Ломоносова</h3>
-                <p>Бюджет, направление: Прикладная математика</p>
-                <div class="status-meta">
-                    <span>Баллы ЕГЭ: 285</span>
-                    <span>Статус: Подтвержден</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="status-item pending">
-            <div class="status-icon">⏱️</div>
-            <div class="status-content">
-                <h3>СПбГУ</h3>
-                <p>Контракт, направление: Юриспруденция</p>
-                <div class="status-meta">
-                    <span>Баллы ЕГЭ: 278</span>
-                    <span>Статус: На рассмотрении</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="status-item rejected">
-            <div class="status-icon">✕</div>
-            <div class="status-content">
-                <h3>НГУ</h3>
-                <p>Причина: недостаточно баллов</p>
-                <div class="status-meta">
-                    <span>Баллы ЕГЭ: 260</span>
-                    <span>Статус: Отклонен</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-     <section class="recommendations">
-    <h2 class="section-title">Рекомендации для вас</h2>
-    <div class="recommendation-grid">
-        <div class="recommendation-card">
-            <div class="uni-badge">Бюджет</div>
-            <h3>КФУ</h3>
-            <p>Проходной балл от 250</p>
-            <div class="uni-details">
-                <div>Конкурс: 5 чел/место</div>
-                <div>Бюджетных мест: 120</div>
-            </div>
-            <button class="btn btn-primary">Подать заявку</button>
-        </div>
-
-        <div class="recommendation-card">
-            <div class="uni-badge contract">Контракт</div>
-            <h3>УрФУ</h3>
-            <p>Проходной балл от 240</p>
-            <div class="uni-details">
-                <div>Конкурс: 4 чел/место</div>
-                <div>Стоимость: 150 000руб/год</div>
-            </div>
-            <button class="btn btn-primary">Подать заявку</button>
-        </div>
-
-        <div class="recommendation-card">
-            <div class="uni-badge">Бюджет</div>
-            <h3>ТГУ</h3>
-            <p>Проходной балл от 220</p>
-            <div class="uni-details">
-                <div>Конкурс: 3 чел/место</div>
-                <div>Бюджетных мест: 80</div>
-            </div>
-            <button class="btn btn-secondary">Подробнее</button>
-        </div>
-    </div>
-</section>
 </main>
 
-<footer class="footer">
-    <p>&copy; 2026 ABITtracker. Все права защищены.</p>
-</footer>
+<footer class="footer"><p>&copy; 2026 ABITtracker. Все права защищены.</p></footer>
+
 </body>
 </html>
